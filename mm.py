@@ -21,5 +21,16 @@ def vulKleurenDict(amount):
             zak.update({woord : 1})
     return zak
 
+def sorteerder(zak):
+    if type(zak) == list:
+        zak.sort()
+
+    # HOW DO YOU SORT A DICTIONARY?!?
+    return zak
+
 amount = int(input("Hoeveel kleuren?\n"))
-print(vulKleuren(amount))
+print(sorteerder(vulKleurenList(amount)))
+
+
+amount = int(input("Hoeveel kleuren?\n"))
+print(sorteerder(vulKleurenDict(amount)))
