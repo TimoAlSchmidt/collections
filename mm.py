@@ -3,8 +3,15 @@ import random
 kleur = ['oranje', 'blauw', 'groen', 'bruin']
 
 random.seed()
-#"oranje": 0, "blauw": 0, "groen" : 0, "bruin" : 0
-def vulKleuren(amount):
+
+def vulKleurenList(amount):
+    zak = []
+    for i in range(amount):
+        zak.append(kleur[random.randint(0,3)])
+
+    return zak
+
+def vulKleurenDict(amount):
     zak = {}
     for i in range(amount):
         woord = kleur[random.randint(0,3)]
